@@ -1,0 +1,145 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* Soft blue background for a soothing effect */
+  color: #333333; /* Dark grey text for readability */
+  text-align: center;
+  padding: 20px;
+}
+
+#gameContainer {
+  display: none;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff; /* Keeping the container white for a clean look */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#introduction {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 15px; /* Soft rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for a "pop-out" effect */
+  animation: fadeIn 1s ease-out;
+  line-height: 1.5; /* Improved line spacing for readability */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  color: #1e88e5; /* Bright blue for a pop of color in headings */
+  margin-bottom: 25px;
+  font-size: 2em; /* Larger font size for impact */
+}
+
+p {
+  font-size: 1.2em; /* Slightly larger paragraph text for readability */
+  margin-bottom: 25px;
+}
+
+#startButton {
+  background-color: #42a5f5; /* Bright blue for a visually appealing button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px; /* More pronounced rounded corners */
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+#startButton:hover {
+  background-color: #1e88e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#gameContainer {
+  display: none;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#introduction {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#startButton {
+  background-color: #4fc3f7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#startButton:hover {
+  background-color: #039be5;
+  transform: translateY(-2px);
+}
+#answerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answerButton {
+  background-color: #42a5f5; /* Bright blue for buttons */
+  color: #ffffff; /* White text on buttons */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0; /* Vertical margin */
+  width: 80%; /* Fixed width */
+  max-width: 300px; /* Maximum width */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover and click */
+}
+
+.answerButton:hover,
+.answerButton:focus {
+  background-color: #1e88e5; /* Darker shade on hover/focus */
+  transform: translateY(-2px); /* Slight raise effect */
+}
+#questionText {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
